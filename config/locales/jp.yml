@@ -1,0 +1,189 @@
+jp:
+  site:
+    title: 金守　哲史 | ポートフォリオ
+
+  navigation:
+    home: ホーム
+    about: 自己紹介
+    resume: 履歴書
+    portfolio: ポートフォリオ
+    professional_development: 自己開発
+
+  home:
+    name: 金守　哲史
+    subject: 私は
+    characters:
+      - エンジニア
+      - トリリンガル
+      - ゲーマー
+      - フリスビープレイヤー
+
+  about:
+    section_title: 自己紹介
+    content: >
+      日本で育ち、中学卒業後に中国へ留学しました。その後、カナダで学士号を取得し、エンジニアとしても2年間の経験を積みました。
+      異なる文化や環境での学びを通じて、グローバルな視点を持ち、多様な問題に対処する能力を身につけました。
+      積極的に先を見据え、チームと共に目標達成に向けて努力します。
+      必要であれば強いリーダーシップを発揮し、課題に取り組みながら成果を挙げることを信念としています。
+      グローバルな視点とリーダーシップ力を活かし、様々な問題に取り組み、解決していきたいと考えています。常に先を見据え、チームと共に成長し、結果を出すことを目指しています。
+    title: ソフトウェアエンジニア
+    philosophy: コーディングの理念は、効率性や保守性を高めるために、丁寧でエラーがなく、かつ再利用可能なコードを書くことです。
+    age_label: 年齢
+    age: 24
+    sex_label: 性別
+    sex: 男性
+    website_label: ウェブサイト
+    website: www.example.com
+    degree_label: 最終学歴
+    degree: コンピュータサイエンス学士号
+    linkedin_label: LinkedIn
+    linkedin: linkedin.com/in/hayden-qunkai-shen-b57920178
+    email_label: E-mail
+    email: haydenshen1@gmail.com
+    motivation: >
+      プログラミングに魅了されたきっかけは、高校生の頃にPythonのコードを書いたことでした。
+      たった数行のコードでしたが、初めて自分でプログラムを作った体験は感動的であり衝撃的でした。
+      この経験が大学でコンピューターサイエンスを学ぶ決意につながりました。
+      実際にソフトエンジニアとしての仕事を経験する中で、プログラミングだけでなく、チーム開発の楽しさやユーザーに価値ある製品を提供する喜びも最終的に見出しました。
+
+  skills:
+    section_title: スキル
+    content: >
+      以下のさまざまな技術経験を持ち合わせています。
+    items:
+      - アジャイルソフトウェア開発
+      - Angular
+      - AWS
+      - Bugsnag
+      - Elasticsearch
+      - GitHub
+      - Grafana
+      - Kubernetes
+      - MongoDB
+      - PostgreSQL
+      - Redis
+      - Ruby on Rails
+
+  resume:
+    section_title: 履歴書
+    content: >
+      コンピューターサイエンスの学士号を取得し、ソフトウェアエンジニアとして2年間の経験を積みました。
+      また、塾講師経験や、大学で日本語のティーチングアシスタントなども務め、多様なスキルと様々な状況での効果的なコミュニケーション適性を持っています。
+    contact:
+      title: 連絡先
+      name: 金守　哲史
+      email: haydenshen1@gmail.com
+      linkedin: linkedin.com/in/hayden-qunkai-shen-b57920178
+    education:
+      title: 学歴
+      degree:
+        - title: コンピュータサイエンス学士号
+          date: 2018年 - 2024年
+          institution: ニューブランズウィック大学（カナダ）
+          details:
+            - 'GPA: 3.9/4.3'
+            - 成績優秀者 (Dean's List)
+            - 日本語ティーチングアシスタント
+            - アルティメットフリスビークラブ所属
+            - 2019年/2022年に全国カナダアルティメット大学チャンピョンシップに出場
+    professional_experience:
+      title: 実務経験
+      experiences:
+        - title: ソフトウェアエンジニア
+          date: 2021年5月 - 2022年8月（フルタイム）
+          company: Introhive（カナダ）
+          details:
+            - データベース内のCRMデータを強化するため、様々なソースを活用したデータエンリッチメントサービスに従事
+            - 様々なデータソースから最適なデータを選択するロジックを実装し、データベース内のレコードを作成/更新するバックエンドのジョブ/タスクを開発
+            - 管理者が好みのデータソースを設定できるUI機能を開発
+            - Power BIを含む外部利用のためのJSON形式でのデータの抽出とエクスポートを実装
+            - Amazon S3にデータをアップロードするためのAPI開発、SQLクエリ作成、バックエンドジョブ作成
+        - title: ソフトウェアエンジニア
+          date: 2020年1月 - 2020年8月（パートタイム）
+          company: Introhive（カナダ）
+          details:
+            - セールスフォースなどのCRMツールと統合するエンタープライズWebアプリの開発に貢献
+            - 新しいCRMデータの作成、古いデータの更新、不要なデータの削除、重複データの結合を自動化するバックエンドジョブを毎日実行し、その変更をアプリに反映
+        - title: 数学の夏期講習講師
+          date: 2019年7月 - 2019年8月（パートタイム）
+          company: 国大ゼミナール
+          details:
+            - 少人数の教室で小中学生に算数を教える
+            - 生徒の学習状況を観察し、保護者にフィードバックを提供
+            - 生徒の自信と成功を促進するために、支援的で励みのあるの学習環境を作る
+        - title: プログラミング講師・夏期講習講師（数学・英語）
+          date: 2019年7月 - 2019年8月（パートタイム）
+          company: トライグループ
+          details:
+            - オブジェクト指向の概念に重点を置いた、Pythonでのマンツーマンプログラミング指導を提供
+            - 生徒の具体的な学習目標や興味に合わせレッスンプランを設計、実施
+            - また、複数の場所で夏期講習の講師として、さまざまな学年の生徒に算数と英語を教える
+            - 普段学校に通うことに難しさを抱える生徒、特別なニーズを持つ生徒達へ丁寧に指導
+
+  portfolio:
+    section_title: ポートフォリオ
+    content: >
+      １０個以上のプロジェクトアイディアを持っています。このポトフォリオで私のクリエイティブな視点と技術力が紹介できれば幸いです。
+    status:
+      - 全て
+      - 完了
+      - 進行中
+      - 未着手
+
+  portfolio_details:
+    breadcrumb_label: ポートフォリオ
+    info_label: 詳細
+    category_label: カテゴリ
+    date_label: デプロイ日
+    url_label: URL
+    repo_label: リポジトリ
+    description_label: 概要
+
+  chatfolio:
+    name: Chatfolio
+    category: ウェブポートフォリオ
+    date: 2024年4月
+    url: www.example.com
+    repo: www.example.com
+    description: >
+      このウェブポートフォリオはHTML、CSS、JavaScript、Rails、Bootstrapを駆使して開発されました。
+      多言語対応のウェブサイトで英語、日本語、中国語の3つの言語に対応しており、ユーザーが自分の言語で情報を閲覧できるようになっています。
+      さらに、チャットボット機能が組み込まれており、ユーザーが質問をすると自動的に回答が返ってきます。
+      この機能により、ユーザーは迅速かつ正確な情報を得ることができます。
+      また、レスポンシブデザインも採用されており、様々なデバイスで最適な表示を実現しています。
+  ispend:
+    name: iSpend
+    category: ウェブアプリ
+    date: coming soon
+    url: coming soon
+    repo: coming soon
+    description: >
+      ユーザー登録とメール認証を通じて安全なアカウントを提供し、費用データをグラフやチャートで視覚化して表示します。
+      さらにAI機能がデータを解析し、節約方法や効率的な管理戦略に関する意見を提供します。
+      使いやすいインターフェースを備え、ユーザーが費用を効果的に管理します。
+
+
+  professional_development:
+    section_title: 自己開発
+    content: >
+      スキルを向上させ、業界のトレンドに遅れを取らないよう絶えず学び、実用的な専門能力取得に日常的に取り組んでいます。
+      以下は、私が現在取り組んでいる、あるいは今後取り組む予定の読み物や講座のリストです。
+    learnings:
+      - title: ChatGPTとOpenAIモデルによる最新の生成AI
+        author: Valentina Alto 著
+        link: "https://www.amazon.co.jp/dp/1805123335"
+      - title: プログラミング Ruby 3.2 プラグマティック・プログラマのためのガイド
+        author: Noel Rappin, Dave Thomas 著
+        link: "https://www.amazon.co.jp/dp/B0C5PW6BDW/"
+      - title: Rails 7によるアジャイルWeb開発
+        author: Sam Ruby, Dave Thomas 著
+        link: "https://www.amazon.co.jp/dp/B0CS6WZSLH"
+      - title: Rubyプログラミング 将来の拡張性を備えたアプリケーションの構築
+        author: Theophilus Edet 著
+        link: "https://www.amazon.co.jp/dp/B0C5PW6BDW/"
+  footer:
+    language_label: 言語
+    language:
+      en: English
+      jp: 日本語
+      cn: 中文

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <%= image_tag 'profile-img.jpg', alt: '', class: 'img-fluid rounded-circle' %>
+          <h1 class="text-light"><a href="index.html"><%= t 'home.name' %></a></h1>
+          <div class="social-links mt-3 text-center">
+            <a href="https://github.com/haydenshen1" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://linkedin.com/in/hayden-qunkai-shen-b57920178" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li><a href="/?locale=<%= I18n.locale %>#hero" class="nav-link scrollto"><i class="bx bx-home"></i> <span><%= t 'navigation.home' %></span></a></li>
+            <li><a href="/?locale=<%= I18n.locale %>#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span><%= t 'navigation.about' %></span></a></li>
+            <li><a href="/?locale=<%= I18n.locale %>#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span><%= t 'navigation.resume' %></span></a></li>
+            <li><a href="/?locale=<%= I18n.locale %>#portfolio" class="nav-link scrollto active"><i class="bx bx-book-content"></i> <span><%= t 'navigation.portfolio' %></span></a></li>
+            <li><a href="/?locale=<%= I18n.locale %>#pro-dev" class="nav-link scrollto"><i class="bx bx-library"></i> <span><%= t 'navigation.professional_development' %></span></a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <main id="main">
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2><%= t 'chatfolio.name' %></h2>
+            <ol>
+              <li><%= link_to "#{t 'portfolio_details.breadcrumb_label'}", "/?locale=#{I18n.locale}#portfolio" %></li>
+              <li><%= t 'chatfolio.name' %></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <%= image_tag "portfolio/chatfolio-details-1.jpg", class: 'img-fluid', alt: '' %>
+                  </div>
+                  <div class="swiper-slide">
+                    <%= image_tag "portfolio/chatfolio-details-2.jpg", class: 'img-fluid', alt: '' %>
+                  </div>
+                  <div class="swiper-slide">
+                    <%= image_tag "portfolio/chatfolio-details-3.jpg", class: 'img-fluid', alt: '' %>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3><%= t 'portfolio_details.info_label' %></h3>
+                <ul>
+                  <li><strong><%= t 'portfolio_details.category_label' %></strong>: <%= t 'chatfolio.category' %></li>
+                  <li><strong><%= t 'portfolio_details.date_label' %></strong>: <%= t 'chatfolio.date' %></li>
+                  <li><strong><%= t 'portfolio_details.url_label' %></strong>: <a href="#"><%= t 'chatfolio.url' %></a></li>
+                  <li><strong><%= t 'portfolio_details.repo_label' %></strong>: <a href="#"><%= t 'chatfolio.repo' %></a></li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2><%= t 'portfolio_details.description_label' %></h2>
+                <p><%= t 'chatfolio.description' %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Details Section -->
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container mt-5">
+        <div class="dropdown dropup" data-turbo="false">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-translate"></i>
+            <%= t 'footer.language_label' %>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="?locale=en"><img src="https://flagsapi.com/CA/flat/32.png"> <%= t 'footer.language.en' %> </a></li>
+            <li><a class="dropdown-item" href="?locale=jp"><img src="https://flagsapi.com/JP/flat/32.png"> <%= t 'footer.language.jp' %></a></li>
+            <li><a class="dropdown-item" href="?locale=cn"><img src="https://flagsapi.com/CN/flat/32.png"> <%= t 'footer.language.cn' %></a></li>
+            <!-- Add more language options with respective flag icons -->
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+    <!-- Vendor JS Files -->
+    <%= javascript_include_tag 'purecounter/purecounter_vanilla', 'aos/aos', 'bootstrap/bootstrap.bundle.min', 'glightbox/glightbox.min', 'isotope-layout/isotope.pkgd.min', 'swiper/swiper-bundle.min', 'typed.js/typed.umd', 'waypoints/noframework.waypoints' , "data-turbolinks-eval" => false%>
+    <!-- Template Main JS File -->
+    <%= javascript_include_tag 'main' %>
+  </body>
+</html>

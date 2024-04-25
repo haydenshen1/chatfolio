@@ -1,0 +1,21 @@
+<button class="chatbot-toggler">
+  <span class="material-symbols-outlined">mode_comment</span>
+  <span class="material-symbols-outlined">close</span>
+</button>
+<div class="chatbot">
+  <header>
+    <h2>ChatWithMe</h2>
+    <span class="close-btn material-symbols-outlined">close</span>
+  </header>
+  <ul class="chatbox">
+    <li class="chat incoming">
+      <%= image_tag 'profile-img.jpg', alt: '', class: 'img-fluid avatar' %>
+      <p>Ask anything about me! <br>
+        i.e. What's your favorite programming language?</p>
+    </li>
+  </ul>
+  <div class="chat-input">
+    <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+    <span id="send-btn" class="material-symbols-outlined">send</span>
+  </div>
+</div>

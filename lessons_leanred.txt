@@ -1,0 +1,20 @@
+Turbo/Tubolinks doesn't work well with some of bootstrap elements
+https://stackoverflow.com/questions/29018447/bootstrap-dropdown-stops-working-after-i-switch-pages-rails-4-2
+
+Solution: 
+Turbo Drive can be disabled on a per-element basis by annotating the element or any of its ancestors with data-turbo="false".
+https://github.com/hotwired/turbo-rails?tab=readme-ov-file#navigate-with-turbo-drive
+
+Favicon not showing on safari
+https://stackoverflow.com/questions/64236057/how-to-create-a-favicon-for-safari-14
+
+Solution:
+Empty the entire Safari cache from Develop menu or using this keyboard shortcut ⌥⌘E
+
+
+
+"Installing sassc 2.4.0 with native extensions" takes forever when building docker
+https://github.com/sass/sassc-ruby/issues/209#issuecomment-659613488
+
+Solution:
+just don't use sassc gem

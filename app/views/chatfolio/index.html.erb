@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <%= image_tag 'profile-img.jpg', alt: '', class: 'img-fluid rounded-circle' %>
+          <h1 class="text-light"><a href="index.html"><%= t 'home.name' %></a></h1>
+          <div class="social-links mt-3 text-center">
+            <a href="https://github.com/haydenshen1" class="social-links" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://linkedin.com/in/hayden-qunkai-shen-b57920178" class="social-links" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span><%= t 'navigation.home' %></span></a></li>
+            <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span><%= t 'navigation.about' %></span></a></li>
+            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span><%= t 'navigation.resume' %></span></a></li>
+            <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span><%= t 'navigation.portfolio' %></span></a></li>
+            <li><a href="#pro-dev" class="nav-link scrollto"><i class="bx bx-library"></i> <span><%= t 'navigation.professional_development' %></span></a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="hero-container" data-aos="fade-in">
+        <h1><%= t 'home.name' %></h1>
+        <p><%= t 'home.subject' %> <span class="typed" data-typed-items="<%= t('home.characters').join(', ') %>"></span></p>
+      </div>
+    </section>
+    <!-- End Hero -->
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2><%= t 'about.section_title' %></h2>
+            <p><%= t 'about.content' %></p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+              <%= image_tag 'profile-img.jpg', alt: '', class: 'img-fluid' %>
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <h3><%= t 'about.title' %></h3>
+              <p class="fst-italic"><%= t 'about.philosophy' %></p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong><%= t 'about.age_label' %>:</strong> <span><%= t 'about.age' %></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong><%= t 'about.website_label' %>:</strong> <a href="www.example.com" target="_blank"><span><%= t 'about.website' %></span></a></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong><%= t 'about.linkedin_label' %>:</strong> <a href="https://linkedin.com/in/hayden-qunkai-shen-b57920178" target="_blank"><span><%= t 'about.linkedin' %></span></a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong><%= t 'about.sex_label' %>:</strong> <span><%= t 'about.sex' %></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong><%= t 'about.degree_label' %>:</strong> <span><%= t 'about.degree' %></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong><%= t 'about.email_label' %>:</strong> <span><%= t 'about.email' %></span></li>
+                  </ul>
+                </div>
+              </div>
+              <p><%= t 'about.motivation' %></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2><%= t 'skills.section_title' %></h2>
+            <p><%= t 'skills.content' %></p>
+          </div>
+          <div class="row skills-content">
+            <div class="col-lg-4" data-aos="fade-up">
+              <% t('skills.items')[0..3].each do |item| %>
+                <div class="progress">
+                  <span class="skill">- <%= item %></span>
+                </div>
+              <% end %>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <% t('skills.items')[4..7].each do |item| %>
+                <div class="progress">
+                  <span class="skill">- <%= item %></span>
+                </div>
+              <% end %>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <% t('skills.items')[8..11].each do |item| %>
+                <div class="progress">
+                  <span class="skill">- <%= item %></span>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container">
+          <div class="section-title">
+            <h2><%= t 'resume.section_title' %></h2>
+            <p><%= t 'resume.content' %> </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+              <h3 class="resume-title"><%= t 'resume.contact.title' %></h3>
+              <div class="resume-item pb-0">
+                <h4><%= t 'resume.contact.name' %></h4>
+                <ul>
+                  <li><%= t 'resume.contact.email' %></li>
+                  <li><%= t 'resume.contact.linkedin' %></li>
+                </ul>
+              </div>
+              <h3 class="resume-title"><%= t 'resume.education.title' %></h3>
+              <div class="resume-item">
+                <h4><%= t('resume.education.degree')[0][:title] %></h4>
+                <h5><%= t('resume.education.degree')[0][:date] %></h5>
+                <p><em><%= t('resume.education.degree')[0][:institution] %></em></p>
+                <ul>
+                  <% t('resume.education.degree')[0][:details].each do |detail| %>
+                    <li><%= detail %></li>
+                  <% end %>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Professional Experience</h3>
+              <% t('resume.professional_experience.experiences').each do |experience| %>
+                <div class="resume-item">
+                  <h4><%= experience[:title] %></h4>
+                  <h5><%= experience[:date] %></h5>
+                  <p><em><%= experience[:company] %></em></p>
+                  <ul>
+                    <% experience[:details].each do |detail| %>
+                      <li><%= detail %></li>
+                    <% end %>
+                  </ul>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Resume Section -->
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2><%= t 'portfolio.section_title' %></h2>
+            <p><%= t 'portfolio.content' %></p>
+          </div>
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active"><%= t('portfolio.status')[0] %></li>
+                <li data-filter=".filter-finished"><%= t('portfolio.status')[1] %></li>
+                <li data-filter=".filter-in-progress"><%= t('portfolio.status')[2] %></li>
+                <li data-filter=".filter-not-started"><%= t('portfolio.status')[3] %></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+            <% [
+              {name: 'Chatfolio', status: 'finished', id: 'chatfolio'},
+              {name: 'iSpend', status: 'in-progress', id: 'ispend'},
+              {name: 'EzUrlSave', status: 'not-started', id: 'ezurlsave'},
+              {name: 'CommentTube', status: 'not-started', id: 'commenttube'},
+              {name: 'FailLog', status: 'not-started', id: 'faillog'},
+              {name: 'OneChatbot', status: 'not-started', id: 'onechatbot'}
+            ].each do |project| %>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-<%= project[:status] %>">
+                <div class="portfolio-wrap">
+                  <%= image_tag "portfolio/#{project[:id]}.jpg", class: 'img-fluid', alt: '' %>
+                  <div class="portfolio-links">
+                    <a href="assets/portfolio/<%= project[:id] %>.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=<%= project[:name] %>><i class="bx bx-zoom-in"></i></a>
+                    <% unless project[:status] == 'not-started' %>
+                      <%= link_to "portfolio/#{project[:id]}?locale=#{I18n.locale}" do %>
+                        <i class="bx bx-info-circle"></i>
+                  <% end %>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+  <!-- End Portfolio Section -->
+  <!-- ======= Professional Development Section ======= -->
+  <section id="pro-dev" class="pro-dev section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2><%= t 'professional_development.section_title' %></h2>
+        <p><%= t 'professional_development.content' %></p>
+      </div>
+      <div class="pro-dev-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+          <% t('professional_development.learnings').each.with_index do |learning, index| %>
+            <div class="swiper-slide">
+              <div class="pro-dev-item" data-aos="fade-up">
+                <p>
+                  <b>"<%= learning[:title] %>"</b><br/>
+                  <%= learning[:author] %>
+                </p>
+                <a href= "<%= learning[:author] %>" target="_blank"><%= image_tag "pro-dev/pro-dev-#{index + 1}.jpg", alt: '', class: 'pro-dev-img' %></a>
+              </div>
+            </div>
+            <!-- End Professional Development item -->
+          <% end %>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End Professional Development Section -->
+  <!-- ======= Chatbot ======= -->
+  <%= render partial: 'shared/chatbot' %>
+  <!-- End  Chatbot -->
+</main><!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container mt-5">
+    <div class="dropdown dropup" data-turbo="false">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-translate"></i>
+        <%= t 'footer.language_label' %>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="?locale=en"><img src="https://flagsapi.com/CA/flat/32.png"> <%= t 'footer.language.en' %> </a></li>
+        <li><a class="dropdown-item" href="?locale=jp"><img src="https://flagsapi.com/JP/flat/32.png"> <%= t 'footer.language.jp' %></a></li>
+        <li><a class="dropdown-item" href="?locale=cn"><img src="https://flagsapi.com/CN/flat/32.png"> <%= t 'footer.language.cn' %></a></li>
+        <!-- Add more language options with respective flag icons -->
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- End  Footer -->
+</body>
+</html>

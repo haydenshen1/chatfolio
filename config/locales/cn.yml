@@ -1,0 +1,188 @@
+cn:
+  site:
+    title: Hayden Shen | 作品集
+
+  navigation:
+    home: 主页
+    about: 关于我
+    resume: 简历
+    portfolio: 作品集
+    professional_development: 自我发展
+
+  home:
+    name: Hayden Shen
+    subject: 我是
+    characters:
+      - 软件开发者
+      - 多语言使用者
+      - 游戏玩家
+      - 极限飞盘玩家
+
+  about:
+    section_title: 关于我
+    content: >
+      我是一名在日本成长、在中国留学并在加拿大获得学位的软件工程师，在加拿大拥有两年的工作经验。
+      曾经去过孟加拉国，澳大利亚，菲律宾，台湾，我理解在工作中尊重不同文化背景和价值观以及公平竞争的重要性。
+      我勇与承担责任并注重与团队合作，鼓舞团队共同应对问题，积极创新挑战，取得成果。
+      我的目标是不断提高自己的跨文化交际能力和适应能力，从工作中持续努力和实践，实现更好的工作效率和协作关系。
+    title: 软件工程师
+    philosophy: 编码的理念是为了提高效率和可维护性，编写一份细致、无错误且可重复利用的代码。这样可以提升整个项目的质量，使开发流程更加顺畅进行。
+    age_label: 年齢
+    age: 24
+    sex_label: 性別
+    sex: 男性
+    website_label: ウェブサイト
+    website: www.example.com
+    degree_label: 最終学歴
+    degree: コンピュータサイエンス学士
+    linkedin_label: LinkedIn
+    linkedin: linkedin.com/in/hayden-qunkai-shen-b57920178
+    email_label: E-mail
+    email: haydenshen1@gmail.com
+    motivation: >
+      我被编程吸引的契机是在高中时期写了一些Python代码。
+      尽管只是几行代码，但第一次自己编写程序的体验令我感动不已，也给我留下了深刻印象。
+      这一经历促使我决定在大学学习计算机科学。
+      在实际作为软件工程师工作的过程中，我不仅体会到了编程的乐趣，还最终发现了团队开发的乐趣以及为用户提供有价值产品的喜悦。
+
+  skills:
+    section_title: 技能
+    content: >
+      我有各种技术经验，包括但不限于：
+    items:
+      - 敏捷软件开发
+      - Angular
+      - AWS
+      - Bugsnag
+      - Elasticsearch
+      - GitHub
+      - Grafana
+      - Kubernetes
+      - MongoDB
+      - PostgreSQL
+      - Redis
+      - Ruby on Rails
+
+  resume:
+    section_title: 简历
+    content: >
+      我获得了计算机科学的学士学位，并拥有两年的软件工程师经验。
+      此外，我还担任过辅导班讲师以及大学日语教学助理等职务，积累了丰富的经验，具备在不同情境下进行有效沟通的能力。
+    contact:
+      title: 联系方式
+      name: 沈勋凯
+      email: haydenshen1@gmail.com
+      linkedin: linkedin.com/in/hayden-qunkai-shen-b57920178
+    education:
+      title: 教育
+      degree:
+        - title: 计算机科学学士
+          date: 2018年 - 2024年
+          institution: 加拿大新不伦瑞克大学
+          details:
+            - 'CGPA: 3.9/4.3'
+            - 院长名单学生
+            - 日语助教
+            - 极限飞盘俱乐部成员
+            - 2019年/2022年参加加拿大大学极限飞盘锦标赛
+    professional_experience:
+      title: 专业经验
+      experiences:
+        - title: 软件工程师
+          date: 2021年5月 - 2022年8月（全职）
+          company: Introhive，加拿大
+          details:
+            - 从事数据丰富服务，利用各种来源增强CRM数据库中的数据
+            - 实现了从各种来源选择最佳数据的逻辑，并开发了一个后端作业/任务来创建/更新数据库中的记录
+            - 开发了一个功能，使管理员能够配置首选数据源
+            - 领导了从JSON格式中提取和导出丰富数据的工作，以供外部使用，包括Power BI
+            - 专门从事API开发、SQL查询编写和上传数据到Amazon S3存储桶的后端作业创建
+        - title: 软件工程师
+          date: 2020年1月 - 2020年8月（兼职）
+          company: Introhive，加拿大
+          details:
+            - 参与开发与CRM工具集成的企业Web应用程序
+            - 实现了每日运行的后端作业，自动创建新的CRM数据，更新过时数据，删除不需要的数据，并合并重复数据，并在应用程序中反映出这些更改
+        - title: 数学导师
+          date: 2019年7月 - 2019年8月（兼职）
+          company: 国大ゼミナール株式会社，日本
+          details:
+            - 在小教室里教授小学生基本的数学课程
+            - 监控学生的进步，并向家长提供反馈
+            - 培养支持性和鼓舞性的学习环境，促进学生的信心和成功
+        - title: 编程导师和暑期学校导师（数学和英语）
+          date: 2019年7月 - 2019年8月（兼职）
+          company: Trygroup Inc.，日本
+          details:
+            - 重点放在面向对象的概念上，提供针对Python的一对一编程指导
+            - 根据学生具体的学习目标和兴趣设计并实施课程计划
+            - 作为暑期课程的讲师，在多个地点教授不同年级学生数学和英语
+            - 对于那些平时上学困难或有特殊需求的学生，提供细致的指导
+
+  portfolio:
+    section_title: 作品集
+    content: >
+      我持有超过10个项目创意。如果我的作品集能展示我的创意视角和技术能力，我将不胜感激。
+    status:
+      - 全部
+      - 已完成
+      - 进行中
+      - 未开始
+  
+  portfolio_details:
+    breadcrumb_label: 作品集
+    info_label: 信息
+    category_label: 类别
+    date_label: 日期
+    url_label: 网址
+    repo_label: 存储库
+    description_label: 描述
+
+  chatfolio:
+    name: Chatfolio
+    category: 网页端口
+    date: 2024年4月
+    url: www.example.com
+    repo: www.example.com
+    description: >
+      这个网站是由HTML、CSS、JavaScript、Rails和Bootstrap开发的。
+      它是一个多语言网站，支持英语、日语和中文三种语言，让用户可以用自己熟悉的语言查看信息。
+      此外，它还集成了聊天机器人功能，用户提出问题时可以自动回答，为用户提供迅速且准确的信息。
+      同时，它还采用了响应式设计，可以在各种设备上实现最佳显示效果。
+
+  ispend:
+    name: iSpend
+    category: 网络应用
+    date: coming soon
+    url: coming soon
+    repo: coming soon
+    description: >
+      一个能够帮助用户有效管理费用的工具。
+      用户可以通过电子邮件注册并通过电子邮件验证账户。
+      该应用将费用数据可视化为图表，使用户能够轻松地了解费用的趋势和模式。
+      此外，AI功能将对数据进行分析，并提供有关节省费用和高效管理策略的建议。
+
+
+  professional_development:
+    section_title: 专业发展
+    content: >
+      我不断努力提升技能，跟上行业趋势，始终保持学习状态，以获取实用的专业能力以下是我目前正在参与或计划追求的阅读材料和课程列表。
+    learnings:
+      - title: 现代生成式AI：ChatGPT和OpenAI模型
+        author: Valentina Alto
+        link: "https://www.amazon.cn/dp/1805123335"
+      - title: Ruby 3.2编程：实用程序员指南
+        author: Noel Rappin, Dave Thomas
+        link: "https://www.amazon.cn/dp/B0C5PW6BDW/"
+      - title: 使用Rails 7进行敏捷Web开发
+        author: Sam Ruby, Dave Thomas
+        link: "https://www.amazon.cn/dp/B0CS6WZSLH"
+      - title: Ruby编程：构建未来可扩展的应用程序
+        author: Theophilus Edet
+        link: "https://www.amazon.cn/dp/B0C5PW6BDW/"
+  footer:
+    language_label: 语言
+    language:
+      en: English
+      jp: 日本語
+      cn: 中文

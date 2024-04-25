@@ -1,0 +1,190 @@
+en:
+  site:
+    title: Hayden Shen | Portfolio
+
+  navigation:
+    home: Home
+    about: About
+    resume: Resume
+    portfolio: Portfolio
+    professional_development: Professional Development
+
+  home:
+    name: Hayden Shen
+    subject: I'm
+    characters: 
+      - Developer
+      - Trilingual
+      - Video Gamer
+      - Ultimate Frisbee Player
+
+  about:
+    section_title: About
+    content: >
+      I'm a passionate software engineer with 2 years of professional experienc in Canada, fueled by a Bachelor's degree in Computer Science and enriched by my educational journey through Japan, China, and Canada.
+      Leveraging my global perspective, I thrive on crafting innovative solutions.
+      I consistently demonstrate a proactive approach, showcasing my strong leadership skills and readiness to step up whenever the opportunity arises, ensuring smooth team dynamics and effective outcomes.
+    title: Software Engineer
+    philosophy: My coding philosophy revolves around writing clean, errorless, and reusable code, ensuring efficiency and maintainability.
+    age_label: Age
+    age: 24
+    sex_label: Sex
+    sex: Male
+    website_label: Website
+    website: www.example.com
+    degree_label: Degree
+    degree: Bachelor of Computer Science
+    linkedin_label: LinkedIn
+    linkedin: linkedin.com/in/hayden-qunkai-shen-b57920178
+    email_label: E-mail
+    email: haydenshen1@gmail.com
+    motivation: >
+      My fascination with programming began with writing simple Python code when I was in high school, igniting a spark that led me to pursue a degree in Computer Science. 
+      It was the thrill of creating my first program, albeit just a few lines of code, that set me on this path.
+      Moreover, my experience as a software engineer further solidified my passion. 
+      Beyond programming, I found joy in the collaborative process of software development and the dynamic teamwork required to deliver impactful products to customers.
+
+  skills:
+    section_title: Skills
+    content: >
+      I have experience in various technologies, including but not limited to:
+    items: 
+      - Agile Software Development
+      - Angular
+      - AWS
+      - Bugsnag
+      - Elasticsearch
+      - GitHub
+      - Grafana
+      - Kubernetes
+      - MongoDB
+      - PostgreSQL
+      - Redis
+      - Ruby on Rails
+
+  resume:
+    section_title: Resume
+    content: >
+      With a Bachelor's degree in Computer Science and 2 years of experience as a software engineer, I bring a solid foundation in technology. 
+      I've also excelled in roles as a programming tutor, math tutor, and Japanese teaching assistant,
+      underscoring my diverse skill set and aptitude for effective communication across various domains.
+    contact:
+      title: Contact
+      name: Hayden Shen
+      email: haydenshen1@gmail.com
+      linkedin: linkedin.com/in/hayden-qunkai-shen-b57920178
+    education:
+      title: Education
+      degree: 
+          - title: Bachelor of Computer Science
+            date: 2018 - 2024
+            institution: University of New Brunswick, Canada
+            details:
+              - 'CGPA: 3.9/4.3'
+              - Dean's List student
+              - Japanese Teaching Assistant
+              - Member of Ultimate Frisbee Club
+              - Played Canadian University Ultimate Championships in 2019/2022
+    professional_experience:
+      title: Professional Experience
+      experiences:
+        - title: Associate Software Engineer
+          date: May 2021 - Aug 2022 (Full-time)
+          company: Introhive, Canada
+          details:
+            - Engaged in data enrichment services, leveraging various sources to enhance CRM data in the database
+            - Implemented logic for selecting the best data from various sources and developed a backend job/task to create/update records in the database
+            - Developed a feature enabling administrators to configure preferred data sources
+            - Led efforts in extracting and exporting enriched data in JSON format for external use, including Power BI
+            - Specialized in API development, SQL query writing, and backend job creation for uploading data to Amazon S3 bucket
+        - title: Associate Software Engineer
+          date: Jan 2020 - Aug 2020 (Part-time)
+          company: Introhive, Canada
+          details:
+            - Contributed to the development of an enterprise web app that integrates with CRM tools like Salesforce
+            - Implemented a backend job to run daily, automating the creation of new CRM data, updating stale data, removing unwanted data, and merging duplicate data, with the changes reflected in the app
+        - title: Math Tutor
+          date: Jul 2019 - Aug 2019 (Part-time)
+          company: Kokudai Seminar Corp., Japan
+          details:
+            - Taught math to a group of elementary/middle-school students in a small classroom
+            - Monitored student progress and provided feedback to parents/guardians
+            - Fostered a supportive and encouraging learning environment to promote student confidence and success
+        - title: Programming Tutor & Summer School Tutor (Math and English)
+          date: Jul 2019 - Aug 2019 (Part-time)
+          company: Trygroup Inc., Japan
+          details:
+            - Provided one-to-one programming tutoring, focusing on the basics of Python with an emphasis on Object-Oriented Programming concepts
+            - Designed and implemented tailored lesson plans to meet the specific learning goals of the student
+            - Also worked as a summer school tutor in multiple locations, teaching mathematics and English to students of various grade levels
+            - Successfully tutored students with special needs, including those who faced challenges attending school regularly
+
+  portfolio:
+    section_title: Portfolio
+    content: >
+      With a wealth of over 10 project ideas spanning various domains, I'm excited to present my creative vision and technical prowess.
+      Explore my portfolio to learn more about my journey and how I can contribute to your team or project.
+    status:
+      - ALL
+      - FINISHED
+      - IN PROGRESS
+      - NOT STARTED
+  
+  portfolio_details:
+    breadcrumb_label: Portfolio
+    info_label: Project Information
+    category_label: Category
+    date_label: Deployment date
+    url_label: URL
+    repo_label: Repo.
+    description_label: Project Description
+    
+  chatfolio:
+    name: Chatfolio
+    category: Web Portfolio
+    date: Apr 2024
+    url: www.example.com
+    repo: www.example.com
+    description: >
+      Discover my Web Portfolio, a dynamic showcase of multilingual excellence and personalized engagement. 
+      With seamless support for English, Japanese, and Chinese, visitors can explore my work and biography comfortably in their preferred language. 
+      Meet the trained chatbot, a virtual counterpart of me, ready to provide insightful answers to any questions about my background and projects. 
+      Built with HTML, CSS, JavaScript, Rails, and Bootstrap, this portfolio offers a seamless browsing experience across devices, 
+      highlighting my achievements, skills, and projects with intuitive navigation and responsive design. 
+
+  ispend:
+    name: iSpend
+    category: Web App
+    date: coming soon
+    url: coming soon
+    repo: coming soon
+    description: >
+      Introducing iSpend: a comprehensive web application that transforms expense tracking with advanced features. 
+      Seamlessly managing expenses, it ensures security with robust user authentication, authorizations, and offers intuitive data visualization through dynamic graphs. 
+      Incorporating AI capabilities, iSpend provides intelligent suggestions for optimizing expenses, 
+      making it a must-have tool for anyone seeking efficient and insightful expense management.
+  professional_development:
+    section_title: Professional Development
+    content: >
+      Continuously striving to enhance my skills and stay abreast of industry trends, I actively engage in ongoing professional development initiatives.
+      Below is the list of reading materials and courses I am currently engaged in or plan to pursue.
+    learnings:
+      - title: Modern Generative AI with ChatGPT and OpenAI Models
+        author: by Valentina Alto
+        link: "https://www.amazon.com/Modern-Generative-ChatGPT-OpenAI-Models/dp/1805123335"
+      - title: Programming Ruby 3.2 The Pragmatic Programmers' Guide
+        author: by Noel Rappin, Dave Thomas
+        link: "https://pragprog.com/titles/ruby5/programming-ruby-3-3-5th-edition/"
+      - title: Agile Web Development with Rails 7
+        author: by Sam Ruby, Dave Thomas
+        link: "https://www.amazon.com/Agile-Web-Development-Rails-7-ebook/dp/B0C5PW6BDW/ref=sr_1_1?crid=36DEQAOF2TGRQ&dib=eyJ2IjoiMSJ9.lPMYcR4kx73xC9pD8SiSX8RqGs3FpD0B71gqWdsDIPSrPpKxPMTwjK1JA8jgCMgF.euJTyyF1N_VrrZ9yitfvQFeFfWwHSzWyuhrUUIuN_nY&dib_tag=se&keywords=agile+web+development+with+rails+7&qid=1712823128&s=digital-text&sprefix=agile+web+development+with+rails+%2Cdigital-text%2C324&sr=1-1"
+      - title: Ruby Programming Building Future-proof Scalable Applications
+        author: by Theophilus Edet
+        link: "https://www.amazon.com/Ruby-Programming-Future-proof-Applications-Mastering-ebook/dp/B0CS6WZSLH"
+
+  footer:
+    language_label: Language
+    language:
+      en: English
+      jp: 日本語
+      cn: 中文
