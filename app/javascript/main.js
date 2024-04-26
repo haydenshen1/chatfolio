@@ -289,7 +289,7 @@
   const createChatLi = (message, className) => {
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", `${className}`);
-    let chatContent = className === "outgoing" ? `<p></p>` : `<img src="/assets/profile-img.jpg" class="img-fluid avatar"><p></p>`;
+    let chatContent = className === "outgoing" ? `<p></p>` : `<img src="/assets/profile-img-8311d20a32636570450990d29b0c3b6e703f449730f4b42bcd8d9c739fb70635.jpg" class="img-fluid avatar"><p></p>`;
     chatLi.innerHTML = chatContent;
     chatLi.querySelector("p").textContent = message;
     return chatLi;
