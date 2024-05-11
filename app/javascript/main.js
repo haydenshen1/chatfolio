@@ -156,6 +156,14 @@
       }
     });
   }
+  /**
+   * Timeline Initialization
+   */
+  timeline(document.querySelectorAll('.timeline'), {
+    forceVerticalMode: 800,
+    mode: 'horizontal',
+    visibleItems: 4
+  });
 
   /**
    * Skills animation
@@ -168,7 +176,7 @@
       handler: function (direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
+          el.style.width = (Number(el.getAttribute('aria-valuenow')) / Number(el.getAttribute('aria-valuemax'))) * 100 + '%'
         });
       }
     })
@@ -212,6 +220,15 @@
   });
 
   /**
+   * Initiate portfolio details lightbox 
+   */
+  const portfolioDetailsLightbox = GLightbox({
+    selector: '.portfolio-details-lightbox',
+    width: '90%',
+    height: '90vh'
+  });
+
+  /**
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {
@@ -229,7 +246,7 @@
   });
 
   /**
-   * pro-dev slider
+   * Professional Development slider
    */
   new Swiper('.pro-dev-slider', {
     speed: 600,
@@ -289,7 +306,7 @@
   const createChatLi = (message, className) => {
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", `${className}`);
-    let chatContent = className === "outgoing" ? `<p></p>` : `<img src="/assets/profile-img-8311d20a32636570450990d29b0c3b6e703f449730f4b42bcd8d9c739fb70635.jpg" class="img-fluid avatar"><p></p>`;
+    let chatContent = className === "outgoing" ? `<p></p>` : `<img src="/assets/profile-img.jpg" class="img-fluid avatar"><p></p>`;
     chatLi.innerHTML = chatContent;
     chatLi.querySelector("p").textContent = message;
     return chatLi;
@@ -299,7 +316,8 @@
     fetch('/generate_response', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        "X-CSRF-Token": select("meta[name=csrf-token]")?.content,
       },
       body: JSON.stringify({ user_message: userMessage })
     })

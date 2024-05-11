@@ -5,6 +5,7 @@ cn:
   navigation:
     home: 主页
     about: 关于我
+    skills: 技术
     resume: 简历
     portfolio: 作品集
     professional_development: 自我发展
@@ -31,8 +32,8 @@ cn:
     age: 24
     sex_label: 性別
     sex: 男性
-    website_label: ウェブサイト
-    website: www.example.com
+    website_label: 网站
+    website: hayden-shen.dev
     degree_label: 最終学歴
     degree: コンピュータサイエンス学士
     linkedin_label: LinkedIn
@@ -45,23 +46,63 @@ cn:
       这一经历促使我决定在大学学习计算机科学。
       在实际作为软件工程师工作的过程中，我不仅体会到了编程的乐趣，还最终发现了团队开发的乐趣以及为用户提供有价值产品的喜悦。
 
+  timeline:
+    section_title: 人生时间线
+    events:
+      - 1999;出生于中国上海
+      - 2000;搬到日本东京
+      - 2013;被提名为青年翼项目成员，并随后从日本派往澳大利亚
+      - 2015;前往中国，就读于大连枫叶国际高中
+      - 2017;在编程课上用Python第一次写程序
+      - 2018;前往加拿大，就读于新不伦瑞克大学攻读计算机科学学士学位
+      - 2020;在Introhive担任软件工程师
+      - 2024;从新不伦瑞克大学获得计算机科学学士学位并毕业
+    link_title:
+      wingofyouth: 关于青少年翼项目
+      institution: 教育机构网站
+      company: 公司网站
+
   skills:
     section_title: 技能
     content: >
-      我有各种技术经验，包括但不限于：
-    items:
-      - 敏捷软件开发
-      - Angular
-      - AWS
-      - Bugsnag
-      - Elasticsearch
-      - GitHub
-      - Grafana
-      - Kubernetes
-      - MongoDB
+      我有各种技术经验：
+    note: "(*只列出了在业务操作中实际使用过的技术)"
+    frontend:
+      label: 前端
+      items:
+        - Angular
+        - HTML / CSS
+        - JavaScript
+        - TypeScript
+    backend:
+      label: 后端
+      items:
+        - Ruby / Ruby on Rails
+    database:
+      label: 数据库
+      items:
       - PostgreSQL
+      - MongoDB
       - Redis
-      - Ruby on Rails
+    infra:
+      label: 基础设施
+      items:
+        - AWS S3
+        - Kubernetes
+        - Docker
+        - Git / Github
+    monitoring:
+      label: 监控
+      items:
+        - Bugsnag
+        - Grafana
+        - Kibana
+    management:
+      label: 项目管理
+      items:
+        - Agile Scrum
+        - Jira
+    duration_unit: 年
 
   resume:
     section_title: 简历
@@ -82,6 +123,7 @@ cn:
           details:
             - 'CGPA: 3.9/4.3'
             - 院长名单学生
+            - 因保持优异的学业表现而在学中获得总计$23,400的奖学金
             - 日语助教
             - 极限飞盘俱乐部成员
             - 2019年/2022年参加加拿大大学极限飞盘锦标赛
@@ -91,27 +133,44 @@ cn:
         - title: 软件工程师
           date: 2021年5月 - 2022年8月（全职）
           company: Introhive，加拿大
-          details:
-            - 从事数据丰富服务，利用各种来源增强CRM数据库中的数据
-            - 实现了从各种来源选择最佳数据的逻辑，并开发了一个后端作业/任务来创建/更新数据库中的记录
-            - 开发了一个功能，使管理员能够配置首选数据源
-            - 领导了从JSON格式中提取和导出丰富数据的工作，以供外部使用，包括Power BI
-            - 专门从事API开发、SQL查询编写和上传数据到Amazon S3存储桶的后端作业创建
+          teams:
+            - name: Data Enrichment team
+              overview: >
+                作为Data Enrichment团队的一员，利用LinkedIn等各种数据来源丰富CRM数据，并确保通过后端解决方案更新数据库记录。这些丰富的数据是Introhive所有软件解决方案的基石，来源于SQS消息、AWS S3和Web应用程序用户输入。
+              details:
+                - 使用Ruby on Rails实现逻辑，从各种来源选择最佳数据，并开发了由Sidekiq和Redis支持的后端作业来创建/更新Postgres数据库中的CRD数据
+                - 使用Bugsnag和Grafana等监控工具，确保日常后端作业的顺利运行
+                - 使用Haml和Rails开发功能，使数据管理员能够配置首选数据来源
+                - 使用Angular/TypeScript/HTML/CSS设计Web应用程序，以便数据管理员创建/更新CRM数据
+
+            - name: Data Extract team
+              overview: >
+                在Data Extract团队中，开发了提取和导出丰富数据以JSON格式供外部使用的工作，例如Power BI。确保每天的更新都上传到Amazon S3存储桶。
+              details:
+                - 使用Rails和Graphiti开发API
+                - 编写SQL查询以提取数据以供上传到Amazon S3
+                - 创建用于数据上传到Amazon S3的后端作业
+                - 使用Kibana监控日常后端作业的顺利运行
         - title: 软件工程师
           date: 2020年1月 - 2020年8月（兼职）
           company: Introhive，加拿大
-          details:
-            - 参与开发与CRM工具集成的企业Web应用程序
-            - 实现了每日运行的后端作业，自动创建新的CRM数据，更新过时数据，删除不需要的数据，并合并重复数据，并在应用程序中反映出这些更改
+          teams:
+            - name: Web App team
+              overview: >
+                与Web App团队合作，增强支持Salesforce等CRM工具的企业Web应用程序，使用户能够批量更新联系人数据
+              details:
+                - 为基于Rails和Angular构建的企业Web应用程序的开发做出了贡献
+                - 开发了用于日常自动化任务的后端作业，包括新的CRM数据创建、陈旧数据更新、不需要的数据删除和重复数据合并，并在应用程序中反映这些变化
+                - 在Jira中编写手动测试用例，并参与回归测试
         - title: 数学导师
-          date: 2019年7月 - 2019年8月（兼职）
+          date: 2019年6月 - 2019年8月（兼职）
           company: 国大ゼミナール株式会社，日本
           details:
             - 在小教室里教授小学生基本的数学课程
             - 监控学生的进步，并向家长提供反馈
             - 培养支持性和鼓舞性的学习环境，促进学生的信心和成功
         - title: 编程导师和暑期学校导师（数学和英语）
-          date: 2019年7月 - 2019年8月（兼职）
+          date: 2019年6月 - 2019年8月（兼职）
           company: Trygroup Inc.，日本
           details:
             - 重点放在面向对象的概念上，提供针对Python的一对一编程指导
@@ -142,8 +201,8 @@ cn:
     name: Chatfolio
     category: 网页端口
     date: 2024年4月
-    url: www.example.com
-    repo: www.example.com
+    url: hayden-shen.dev
+    repo: github.com/haydenshen1/chatfolio
     description: >
       这个网站是由HTML、CSS、JavaScript、Rails和Bootstrap开发的。
       它是一个多语言网站，支持英语、日语和中文三种语言，让用户可以用自己熟悉的语言查看信息。

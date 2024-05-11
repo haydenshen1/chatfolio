@@ -5,6 +5,7 @@ jp:
   navigation:
     home: ホーム
     about: 自己紹介
+    skills: スキル
     resume: 履歴書
     portfolio: ポートフォリオ
     professional_development: 自己開発
@@ -33,7 +34,7 @@ jp:
     sex_label: 性別
     sex: 男性
     website_label: ウェブサイト
-    website: www.example.com
+    website: hayden-shen.dev
     degree_label: 最終学歴
     degree: コンピュータサイエンス学士号
     linkedin_label: LinkedIn
@@ -45,29 +46,68 @@ jp:
       たった数行のコードでしたが、初めて自分でプログラムを作った体験は感動的であり衝撃的でした。
       この経験が大学でコンピューターサイエンスを学ぶ決意につながりました。
       実際にソフトエンジニアとしての仕事を経験する中で、プログラミングだけでなく、チーム開発の楽しさやユーザーに価値ある製品を提供する喜びも最終的に見出しました。
+  timeline:
+    section_title: ライフ・タイムライン
+    events:
+      - 1999;中国の上海で生まれる
+      - 2000;日本の東京に引っ越す
+      - 2013;青少年の翼の一員に選ばれ、その後日本からオーストラリアへ派遣される
+      - 2015;中国へ渡り、大連メープルリーフインターナショナルハイスクールに入学する
+      - 2017;プログラミングの授業にてPythonで初めてのプログラムを書く
+      - 2018;カナダへ渡り、ニューブランズウィック大学に入学し、コンピュータサイエンスの学士号を専攻
+      - 2020;Introhiveでソフトウェアエンジニアとして働く
+      - 2024;ニューブランズウィック大学をコンピュータサイエンスの学士号を取得して卒業
+    link_title:
+      wingofyouth: 青少年の翼について
+      institution: 教育機関のウェブサイト
+      company: 企業のウェブサイト
 
   skills:
     section_title: スキル
     content: >
       以下のさまざまな技術経験を持ち合わせています。
-    items:
-      - アジャイルソフトウェア開発
-      - Angular
-      - AWS
-      - Bugsnag
-      - Elasticsearch
-      - GitHub
-      - Grafana
-      - Kubernetes
-      - MongoDB
+    note: "(＊業務で実際に使用した技術のみ掲載しております。)"
+    frontend:
+      label: フロントエンド
+      items:
+        - Angular
+        - HTML / CSS
+        - JavaScript
+        - TypeScript
+    backend:
+      label: バックエンド
+      items:
+        - Ruby / Ruby on Rails
+    database:
+      label: データベース
+      items:
       - PostgreSQL
+      - MongoDB
       - Redis
-      - Ruby on Rails
+    infra:
+      label: インフラ
+      items:
+        - AWS S3
+        - Kubernetes
+        - Docker
+        - Git / Github
+    monitoring:
+      label: モニタリング
+      items:
+        - Bugsnag
+        - Grafana
+        - Kibana
+    management:
+      label: プロジェクトマネジメント
+      items:
+        - Agile Scrum
+        - Jira
+    duration_unit: 年
 
   resume:
     section_title: 履歴書
     content: >
-      コンピューターサイエンスの学士号を取得し、ソフトウェアエンジニアとして2年間の経験を積みました。
+      カナダでコンピューターサイエンスの学士号を取得し、ソフトウェアエンジニアとして2年間の経験を積みました。
       また、塾講師経験や、大学で日本語のティーチングアシスタントなども務め、多様なスキルと様々な状況での効果的なコミュニケーション適性を持っています。
     contact:
       title: 連絡先
@@ -83,6 +123,7 @@ jp:
           details:
             - 'GPA: 3.9/4.3'
             - 成績優秀者 (Dean's List)
+            - 優秀な学業成績を維持したため、在学中に合計$23,400の奨学金を授与される
             - 日本語ティーチングアシスタント
             - アルティメットフリスビークラブ所属
             - 2019年/2022年に全国カナダアルティメット大学チャンピョンシップに出場
@@ -92,27 +133,44 @@ jp:
         - title: ソフトウェアエンジニア
           date: 2021年5月 - 2022年8月（フルタイム）
           company: Introhive（カナダ）
-          details:
-            - データベース内のCRMデータを強化するため、様々なソースを活用したデータエンリッチメントサービスに従事
-            - 様々なデータソースから最適なデータを選択するロジックを実装し、データベース内のレコードを作成/更新するバックエンドのジョブ/タスクを開発
-            - 管理者が好みのデータソースを設定できるUI機能を開発
-            - Power BIを含む外部利用のためのJSON形式でのデータの抽出とエクスポートを実装
-            - Amazon S3にデータをアップロードするためのAPI開発、SQLクエリ作成、バックエンドジョブ作成
+          teams:
+            - name: Data Enrichmentチーム
+              overview: >
+                Data Enrichmentチームの一員として、LinkedInなどさまざまなデータソースを活用してCRMデータを強化。また、SQSメッセージ、Amazon S3、Webアプリからのユーザー入力など、さまざまなデータを利用。このCRMデータは、Introhiveのソフトウェアソリューション全体の基盤になる。
+              details:
+                - Ruby on Railsでバックエンドロジックを実装。さまざまなソースから最適なデータを選択し、SidekiqとRedisで動作するバックエンドジョブを活用し、PostgresデータベースでCRMデータを作成/更新。
+                - BugsnagやGrafanaなどのモニタリングツールを利用して、日々のバックエンドジョブの動作確認。
+                - HamlとRailsを使用して、データ管理者が任意のデータソースを設定できる機能を開発。
+                - Angular/TypeScript/HTML/CSSを使用して、データ管理者がCRMデータの作成/更新を容易にするWebアプリケーションを設計。
+
+            - name: Data Extractチーム
+              overview: >
+                Data Extractチームでは、Power BIなどの外部利用のために、JSON形式でCRMデータを抽出およびエクスポートする取り組みに貢献。また、毎日更新されたデータがAmazon S3にアップロードされることを確認
+              details:
+                - RailsとGraphitiを使用してAPIを開発
+                - Amazon S3へのデータエクスポートのためにSQLクエリを作成
+                - Amazon S3へのデータアップロードのためのバックエンドジョブを作成
+                - Kibanaを使い、日々のバックエンドジョブのスムーズな動作を監視
         - title: ソフトウェアエンジニア
           date: 2020年1月 - 2020年8月（パートタイム）
           company: Introhive（カナダ）
-          details:
-            - セールスフォースなどのCRMツールと統合するエンタープライズWebアプリの開発に貢献
-            - 新しいCRMデータの作成、古いデータの更新、不要なデータの削除、重複データの結合を自動化するバックエンドジョブを毎日実行し、その変更をアプリに反映
+          teams:
+            - name: Web Appチーム
+              overview: >
+                SalesforceなどのCRMツールをサポートするエンタープライズWebアプリケーションを強化するために、Web Appチームに参加。ユーザーはこのアプリを使用して、すべてのCRMデータを一括で更新可能。
+              details:
+                - RailsとAngularで構築されたエンタープライズWebアプリの開発に貢献
+                - 新しいCRMデータの作成、古いデータの更新、不要なデータの削除、および重複データのマージなど、日々の自動化タスクのためのバックエンドジョブを開発に貢献
+                - Jiraで手動テストケースを記述し、リグレッションテストにも参加
         - title: 数学の夏期講習講師
-          date: 2019年7月 - 2019年8月（パートタイム）
+          date: 2019年6月 - 2019年8月（パートタイム）
           company: 国大ゼミナール
           details:
             - 少人数の教室で小中学生に算数を教える
             - 生徒の学習状況を観察し、保護者にフィードバックを提供
             - 生徒の自信と成功を促進するために、支援的で励みのあるの学習環境を作る
         - title: プログラミング講師・夏期講習講師（数学・英語）
-          date: 2019年7月 - 2019年8月（パートタイム）
+          date: 2019年6月 - 2019年8月（パートタイム）
           company: トライグループ
           details:
             - オブジェクト指向の概念に重点を置いた、Pythonでのマンツーマンプログラミング指導を提供
@@ -143,8 +201,8 @@ jp:
     name: Chatfolio
     category: ウェブポートフォリオ
     date: 2024年4月
-    url: www.example.com
-    repo: www.example.com
+    url: hayden-shen.dev
+    repo: github.com/haydenshen1/chatfolio
     description: >
       このウェブポートフォリオはHTML、CSS、JavaScript、Rails、Bootstrapを駆使して開発されました。
       多言語対応のウェブサイトで英語、日本語、中国語の3つの言語に対応しており、ユーザーが自分の言語で情報を閲覧できるようになっています。

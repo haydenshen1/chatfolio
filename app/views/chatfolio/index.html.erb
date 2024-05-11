@@ -8,7 +8,7 @@
       <div class="d-flex flex-column">
         <div class="profile">
           <%= image_tag 'profile-img.jpg', alt: '', class: 'img-fluid rounded-circle' %>
-          <h1 class="text-light"><a href="index.html"><%= t 'home.name' %></a></h1>
+          <h1 class="text-light"><%= t 'home.name' %></h1>
           <div class="social-links mt-3 text-center">
             <a href="https://github.com/haydenshen1" class="social-links" target="_blank"><i class="bx bxl-github"></i></a>
             <a href="https://linkedin.com/in/hayden-qunkai-shen-b57920178" class="social-links" target="_blank"><i class="bx bxl-linkedin"></i></a>
@@ -18,6 +18,7 @@
           <ul>
             <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span><%= t 'navigation.home' %></span></a></li>
             <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span><%= t 'navigation.about' %></span></a></li>
+            <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span><%= t 'navigation.skills' %></span></a></li>
             <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span><%= t 'navigation.resume' %></span></a></li>
             <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span><%= t 'navigation.portfolio' %></span></a></li>
             <li><a href="#pro-dev" class="nav-link scrollto"><i class="bx bx-library"></i> <span><%= t 'navigation.professional_development' %></span></a></li>
@@ -53,7 +54,7 @@
                 <div class="col-lg-6">
                   <ul>
                     <li><i class="bi bi-chevron-right"></i> <strong><%= t 'about.age_label' %>:</strong> <span><%= t 'about.age' %></span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong><%= t 'about.website_label' %>:</strong> <a href="www.example.com" target="_blank"><span><%= t 'about.website' %></span></a></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong><%= t 'about.website_label' %>:</strong> <a href="https://hayden-shen.dev" target="_blank"><span><%= t 'about.website' %></span></a></li>
                     <li><i class="bi bi-chevron-right"></i> <strong><%= t 'about.linkedin_label' %>:</strong> <a href="https://linkedin.com/in/hayden-qunkai-shen-b57920178" target="_blank"><span><%= t 'about.linkedin' %></span></a></li>
                   </ul>
                 </div>
@@ -71,41 +72,104 @@
         </div>
       </section>
       <!-- End About Section -->
+      <!-- ======= Timeline Section ======= -->
+      <section id="timeline" class="life-timeline section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2><%= t 'timeline.section_title' %></h2>
+          </div>
+          <div class="timeline" data-aos="fade-left">
+            <div class="timeline__wrap">
+              <div class="timeline__items">
+                <% t('timeline.events').each do |event| %>
+                  <div class="timeline__item">
+                    <div class="timeline__content">
+                      <h2><%= event.split(';').first %></h2>
+                      <p>
+                        <%= event.split(';').second %>
+                        <% case event.split(';').first %>
+                        <% when '2013' %>
+                          <br>
+                          <br>
+                          <a href='https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/tsubasa/index.html' target="_blank">
+                            <%= t 'timeline.link_title.wingofyouth' %>
+                          </a>
+                        <% when '2015' %>
+                          <br>
+                          <br>
+                          <a href='https://www.mapleleafschools.com/china/schools/Dalian' target="_blank">
+                            <%= t 'timeline.link_title.institution' %>
+                          </a>
+                        <% when '2018' %>
+                          <br>
+                          <br>
+                          <a href='https://www.unb.ca/fredericton/cs/' target="_blank">
+                            <%= t 'timeline.link_title.institution' %>
+                          </a>
+                        <% when '2020' %>
+                          <br>
+                          <br>
+                          <a href='https://www.introhive.com' target="_blank">
+                            <%= t 'timeline.link_title.company' %>
+                          </a>
+                        <% end %>
+                      </p>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======= End Timeline Section======= -->
       <!-- ======= Skills Section ======= -->
-      <section id="skills" class="skills section-bg">
+      <section id="skills" class="skills">
         <div class="container">
           <div class="section-title">
             <h2><%= t 'skills.section_title' %></h2>
-            <p><%= t 'skills.content' %></p>
+            <p>
+              <%= t 'skills.content' %><br>
+              <%= t 'skills.note' %>
+            </p>
           </div>
           <div class="row skills-content">
-            <div class="col-lg-4" data-aos="fade-up">
-              <% t('skills.items')[0..3].each do |item| %>
-                <div class="progress">
-                  <span class="skill">- <%= item %></span>
-                </div>
-              <% end %>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <% t('skills.items')[4..7].each do |item| %>
-                <div class="progress">
-                  <span class="skill">- <%= item %></span>
-                </div>
-              <% end %>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <% t('skills.items')[8..11].each do |item| %>
-                <div class="progress">
-                  <span class="skill">- <%= item %></span>
-                </div>
-              <% end %>
-            </div>
+            <% [
+              {label: t('skills.frontend.label'), items: t('skills.frontend.items'), duration: %w[1 1.5 1.5 1]},
+              {label: t('skills.backend.label'), items: t('skills.backend.items'), duration: %w[2]},
+              {label: t('skills.database.label'), items: t('skills.database.items'), duration: %w[2 1 1]},
+              {label: t('skills.infra.label'), items: t('skills.infra.items'), duration: %w[1 0.5 .5 2]},
+              {label: t('skills.monitoring.label'), items: t('skills.monitoring.items'), duration: %w[0.5 0.5 0.5]},
+              {label: t('skills.management.label'), items: t('skills.management.items'), duration: %w[2 2]}
+            ].each do |skill| %>
+              <h5 data-aos="fade-up"> <%= skill[:label] %> </h5>
+              <div class="col-lg-6" data-aos="fade-up">
+                <% ( (skill[:items].count + 1) / 2 ).times do |i| %>
+                  <div class="progress">
+                    <span class="skill"><%= skill[:items][i] %>  <i class="val"><%= skill[:duration][i] + " " + t('skills.duration_unit') %></i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow=<%= skill[:duration][i] %> aria-valuemin="0" aria-valuemax="2"></div>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up">
+                <% (skill[:items].count / 2).times do |i|%>
+                  <div class="progress">
+                    <span class="skill"><%= skill[:items][ i + (skill[:items].count + 1) / 2 ] %> <i class="val"><%= skill[:duration][ i+ (skill[:items].count + 1) / 2 ] + " " + t('skills.duration_unit') %></i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow=<%= skill[:duration][ i+ (skill[:items].count + 1) / 2 ] %> aria-valuemin="0" aria-valuemax="2"></div>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
           </div>
         </div>
       </section>
       <!-- End Skills Section -->
       <!-- ======= Resume Section ======= -->
-      <section id="resume" class="resume">
+      <section id="resume" class="resume section-bg">
         <div class="container">
           <div class="section-title">
             <h2><%= t 'resume.section_title' %></h2>
@@ -134,17 +198,29 @@
               </div>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Professional Experience</h3>
+              <h3 class="resume-title"><%= t 'resume.professional_experience.title' %></h3>
               <% t('resume.professional_experience.experiences').each do |experience| %>
                 <div class="resume-item">
                   <h4><%= experience[:title] %></h4>
                   <h5><%= experience[:date] %></h5>
                   <p><em><%= experience[:company] %></em></p>
-                  <ul>
-                    <% experience[:details].each do |detail| %>
-                      <li><%= detail %></li>
+                  <% if experience.keys.include? :teams %>
+                    <% experience[:teams].each do |team| %>
+                      <h6><b><%= team[:name] %></b></h6>
+                      <p><small><%= team[:overview] %></small></p>
+                      <ul>
+                        <% team[:details].each do |detail| %>
+                          <li><%= detail %></li>
+                        <% end %>
+                      </ul>
                     <% end %>
-                  </ul>
+                  <% else %>
+                    <ul>
+                      <% experience[:details].each do |detail| %>
+                        <li><%= detail %></li>
+                      <% end %>
+                    </ul>
+                  <% end %>
                 </div>
               <% end %>
             </div>
@@ -153,7 +229,7 @@
       </section>
       <!-- End Resume Section -->
       <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio section-bg">
+      <section id="portfolio" class="portfolio">
         <div class="container">
           <div class="section-title">
             <h2><%= t 'portfolio.section_title' %></h2>
@@ -182,68 +258,67 @@
                 <div class="portfolio-wrap">
                   <%= image_tag "portfolio/#{project[:id]}.jpg", class: 'img-fluid', alt: '' %>
                   <div class="portfolio-links">
-                    <a href="assets/portfolio/<%= project[:id] %>.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=<%= project[:name] %>><i class="bx bx-zoom-in"></i></a>
                     <% unless project[:status] == 'not-started' %>
-                      <%= link_to "portfolio/#{project[:id]}?locale=#{I18n.locale}" do %>
+                      <%= link_to "portfolio/#{project[:id]}?locale=#{I18n.locale}", class: "portfolio-details-lightbox" do %>
                         <i class="bx bx-info-circle"></i>
-                  <% end %>
-                <% end %>
+                      <% end %>
+                    <% end %>
+                  </div>
+                </div>
               </div>
-            </div>
+            <% end %>
           </div>
-        <% end %>
-      </div>
-    </div>
-  </section>
-  <!-- End Portfolio Section -->
-  <!-- ======= Professional Development Section ======= -->
-  <section id="pro-dev" class="pro-dev section-bg">
-    <div class="container">
-      <div class="section-title">
-        <h2><%= t 'professional_development.section_title' %></h2>
-        <p><%= t 'professional_development.content' %></p>
-      </div>
-      <div class="pro-dev-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-          <% t('professional_development.learnings').each.with_index do |learning, index| %>
-            <div class="swiper-slide">
-              <div class="pro-dev-item" data-aos="fade-up">
-                <p>
-                  <b>"<%= learning[:title] %>"</b><br/>
-                  <%= learning[:author] %>
-                </p>
-                <a href= "<%= learning[:author] %>" target="_blank"><%= image_tag "pro-dev/pro-dev-#{index + 1}.jpg", alt: '', class: 'pro-dev-img' %></a>
-              </div>
-            </div>
-            <!-- End Professional Development item -->
-          <% end %>
         </div>
-        <div class="swiper-pagination"></div>
+      </section>
+      <!-- End Portfolio Section -->
+      <!-- ======= Professional Development Section ======= -->
+      <section id="pro-dev" class="pro-dev section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2><%= t 'professional_development.section_title' %></h2>
+            <p><%= t 'professional_development.content' %></p>
+          </div>
+          <div class="pro-dev-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+              <% t('professional_development.learnings').each.with_index do |learning, index| %>
+                <div class="swiper-slide">
+                  <div class="pro-dev-item" data-aos="fade-up">
+                    <p>
+                      <b>"<%= learning[:title] %>"</b><br/>
+                      <%= learning[:author] %>
+                    </p>
+                    <a href= "<%= learning[:author] %>" target="_blank"><%= image_tag "pro-dev/pro-dev-#{index + 1}.jpg", alt: '', class: 'pro-dev-img' %></a>
+                  </div>
+                </div>
+                <!-- End Professional Development item -->
+              <% end %>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Professional Development Section -->
+      <!-- ======= Chatbot Section======= -->
+      <%= render partial: 'shared/chatbot' %>
+      <!-- End  Chatbot Section -->
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container mt-5">
+        <div class="dropdown dropup" data-turbo="false">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-translate"></i>
+            <%= t 'footer.language_label' %>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="?locale=en"><img src="https://flagsapi.com/CA/flat/32.png"> <%= t 'footer.language.en' %> </a></li>
+            <li><a class="dropdown-item" href="?locale=jp"><img src="https://flagsapi.com/JP/flat/32.png"> <%= t 'footer.language.jp' %></a></li>
+            <li><a class="dropdown-item" href="?locale=cn"><img src="https://flagsapi.com/CN/flat/32.png"> <%= t 'footer.language.cn' %></a></li>
+            <!-- Add more language options with respective flag icons -->
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- End Professional Development Section -->
-  <!-- ======= Chatbot ======= -->
-  <%= render partial: 'shared/chatbot' %>
-  <!-- End  Chatbot -->
-</main><!-- End #main -->
-<!-- ======= Footer ======= -->
-<footer id="footer">
-  <div class="container mt-5">
-    <div class="dropdown dropup" data-turbo="false">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="bi bi-translate"></i>
-        <%= t 'footer.language_label' %>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" href="?locale=en"><img src="https://flagsapi.com/CA/flat/32.png"> <%= t 'footer.language.en' %> </a></li>
-        <li><a class="dropdown-item" href="?locale=jp"><img src="https://flagsapi.com/JP/flat/32.png"> <%= t 'footer.language.jp' %></a></li>
-        <li><a class="dropdown-item" href="?locale=cn"><img src="https://flagsapi.com/CN/flat/32.png"> <%= t 'footer.language.cn' %></a></li>
-        <!-- Add more language options with respective flag icons -->
-      </ul>
-    </div>
-  </div>
-</footer>
-<!-- End  Footer -->
-</body>
+    </footer>
+    <!-- End  Footer -->
+  </body>
 </html>
