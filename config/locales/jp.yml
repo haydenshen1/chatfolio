@@ -152,7 +152,7 @@ jp:
                 - Amazon S3へのデータアップロードのためのバックエンドジョブを作成
                 - Kibanaを使い、日々のバックエンドジョブのスムーズな動作を監視
         - title: ソフトウェアエンジニア
-          date: 2020年1月 - 2020年8月（パートタイム）
+          date: 2020年1月 - 2020年8月（フルタイム）
           company: Introhive（カナダ）
           teams:
             - name: Web Appチーム
@@ -239,6 +239,8 @@ jp:
       - title: Rubyプログラミング 将来の拡張性を備えたアプリケーションの構築
         author: Theophilus Edet 著
         link: "https://www.amazon.co.jp/dp/B0C5PW6BDW/"
+  chatbot:
+      prompt: 私について何でも聞いてください！可能な限り受け答えします。
   footer:
     language_label: 言語
     language:

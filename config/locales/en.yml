@@ -22,7 +22,7 @@ en:
   about:
     section_title: About
     content: >
-      I'm a passionate software engineer with 2 years of professional experienc in Canada, fueled by a Bachelor's degree in Computer Science and enriched by my educational journey through Japan, China, and Canada.
+      I'm a passionate software engineer with 2 years of professional experience in Canada, fuelled by a Bachelor's degree in Computer Science and enriched by my educational journey through Japan, China, and Canada.
       Leveraging my global perspective, I thrive on crafting innovative solutions.
       I consistently demonstrate a proactive approach, showcasing my strong leadership skills and readiness to step up whenever the opportunity arises, ensuring smooth team dynamics and effective outcomes.
     title: Software Engineer
@@ -153,7 +153,7 @@ en:
                 - Created backend jobs for data upload to Amazon S3.
                 - Employed Kibana for monitoring the smooth operation of daily backend jobs.
         - title: Associate Software Engineer
-          date: Jan 2020 - Aug 2020 (Part-time)
+          date: Jan 2020 - Aug 2020 (Full-time)
           company: Introhive, Canada
           teams:
             - name: Web App team
@@ -241,6 +241,8 @@ en:
       - title: Ruby Programming Building Future-proof Scalable Applications
         author: by Theophilus Edet
         link: "https://www.amazon.com/Ruby-Programming-Future-proof-Applications-Mastering-ebook/dp/B0CS6WZSLH"
+  chatbot:
+    prompt: Feel free to ask me anything! I'm here to answer.
 
   footer:
     language_label: Language

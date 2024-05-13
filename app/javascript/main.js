@@ -341,7 +341,7 @@
     chatbox.scrollTo(0, chatbox.scrollHeight);
 
     setTimeout(() => {
-      const incomingChatLi = createChatLi("Thinking...", "incoming");
+      const incomingChatLi = createChatLi("...", "incoming");
       chatbox.appendChild(incomingChatLi);
       chatbox.scrollTo(0, chatbox.scrollHeight);
       generateResponse(incomingChatLi);
