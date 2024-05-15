@@ -240,7 +240,7 @@ jp:
         author: Theophilus Edet 著
         link: "https://www.amazon.co.jp/dp/B0C5PW6BDW/"
   chatbot:
-      prompt: 私について何でも聞いてください！可能な限り受け答えします。
+    intro: 私について何でも聞いてください！可能な限り受け答えします。
   footer:
     language_label: 言語
     language:

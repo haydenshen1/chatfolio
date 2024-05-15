@@ -240,7 +240,7 @@ cn:
         author: Theophilus Edet
         link: "https://www.amazon.cn/dp/B0C5PW6BDW/"
   chatbot:
-      prompt: 请随时问任何关于我的事情！
+    intro: 请随时问任何关于我的事情！
   footer:
     language_label: 语言
     language:

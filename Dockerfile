@@ -17,7 +17,6 @@ ENV RAILS_ENV="production" \
 FROM base as build
 
 # Install packages needed to build gems
-# NOTE: This example project intentionally does not require or install node.js
 
 RUN --mount=type=cache,target=/var/cache/apt \
   --mount=type=cache,target=/var/lib/apt,sharing=locked \
@@ -77,8 +76,9 @@ RUN useradd rails --create-home --shell /bin/bash && \
     chown -R rails:rails db log storage tmp
 USER rails:rails
 
+
 # Entrypoint prepares the database.
-# ENTRYPOINT ["/rails/bin/docker-entrypoint"]
+ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000

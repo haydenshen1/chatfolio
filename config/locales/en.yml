@@ -242,7 +242,7 @@ en:
         author: by Theophilus Edet
         link: "https://www.amazon.com/Ruby-Programming-Future-proof-Applications-Mastering-ebook/dp/B0CS6WZSLH"
   chatbot:
-    prompt: Feel free to ask me anything! I'm here to answer.
+    intro: Feel free to ask me anything! I'm here to answer.
 
   footer:
     language_label: Language

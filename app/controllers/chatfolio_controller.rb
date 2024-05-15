@@ -4,7 +4,6 @@ class ChatfolioController < ApplicationController
   end
 
   def generate_response
-    puts 'generate_response called'
     @question = params[:user_message]
     render json: { response: answer.dig('choices', 0, 'message', 'content') }
   end

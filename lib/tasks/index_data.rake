@@ -55,9 +55,14 @@ DATA = [
    'I had several dream jobs when I was younger. In kindergarten, I wanted to become a footballer because I liked watching the anime about American football that was popular in Japan. In primary school, I enjoyed telling jokes to people and making them laugh and happy, so I wanted to become a comedian. In middle school, I thought being able to speak multiple languages was cool, so I wanted to become a translator. In high school, I learned about many political issues between Japan and China. I wanted to study international relations and build a positive cultural bridge in the future to improve the relationship between Japan and China. Also in high school, I enjoyed editing videos and making posters with Photoshop. I took a digital art class and wanted to learn more in university. I was initially not familiar with programming, but my friend invited me to take a programming course together in grade 11. I learned basic programming in Python and I really enjoyed it. I had an epiphany that this is what I want to specialize in. The first program I wrote was to generate Fibonacci series using a loop. In grade 12, I took an intro to computer science course and learned object-oriented programming with Java. I continued my journey of programming by majoring in Computer Science in university. I took many interesting courses like information security, big data, artificial intelligence, video game development, mobile app development, building UI, and numerical analysis. During my internship at Introhive, I realized I enjoy software development as much as I love programming. That’s how I decided to pursue a career in software development.']
 ].freeze
 
+TEST_DATA = [
+  ['About',
+   "I'm a passionate software engineer with 2 years of professional experience in Canada, fueled by a Bachelor's degree in Computer Science and enriched by my educational journey through Japan, China, and Canada. Leveraging my global perspective, I thrive on crafting innovative solutions. I consistently demonstrate a proactive approach, showcasing my strong leadership skills and readiness to step up whenever the opportunity arises, ensuring smooth team dynamics and effective outcomes. My coding philosophy revolves around writing clean, errorless, and reusable code, ensuring efficiency and maintainability. Age:24; Website:hayden-shen.dev; LinkedIn:linkedin.com/in/hayden-qunkai-shen-b57920178; Sex:Male; Degree:Bachelor of Computer Science; E-mail:haydenshen1@gmail.com"]
+].freeze
+
 desc 'Fills database with data and calculate embeddings for each item.'
 task index_data: :environment do
-  DATA.each do |item|
+  TEST_DATA.each do |item|
     page_name, text = item
 
     response = OpenAI::Client.new.embeddings(
